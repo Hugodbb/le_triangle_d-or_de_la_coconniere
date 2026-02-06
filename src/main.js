@@ -428,7 +428,7 @@ function chargerTisserands() {
 
     // 3. Chargement de la texture de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('public/tisserands.jpg', (tex) => {
+    textureLoader.load('./public/tisserands.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;

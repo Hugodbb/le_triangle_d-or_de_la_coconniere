@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez le Triangle de la Coconnière à travers notre webdocumentaire interactif. Explorez l'histoire et les secrets de ce lieu emblématique.">
+    <meta name="keywords"
+        content="Triangle de la Coconnière, webdocumentaire, histoire, Laval, patrimoine, visite virtuelle">
+    <meta name="author" content="Votre Nom">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" type="image/x-icon" href="public/image/favicon (1).ico">
+    <title> Triangle d'or de Laval | Découverte interactive</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+    <div class="stylet bons">
+        <h1 class="sympa">Le triangle d'or de la Coconnière</h1>
+        <h2 class="mini_titre">Visite interactive du patrimoine de la coconnière</h2>
+        <h2 class="mini_titre">Sélectionnez les modes classiques si vous êtes su téléphone ou avec une faible connexion</h2>
+        <div class="parcours-container">
+            <div class="parcours">
+
+                <!-- Bouton Manoir -->
+                <div class="visite">
+                    <img src="public/accueil/manoir.png" id="btn-manoir" class="clickable" alt="Manoir">
+                    <a href="manoir.html" class="merguez dos facile">visite classique manoir</a>
+                </div>
+
+                <!-- Bouton Moulin -->
+                <div class="visite">
+                    <img src="public/accueil/moulin.png" id="btn-moulin" class="clickable" alt="Moulin">
+                    <a href="moulin.html" class="merguez dos facile">visite classique moulin</a>
+                </div>
+
+                <!-- Bouton Tisserands -->
+                <div class="visite">
+                    <img src="public/accueil/tisserands.png" id="btn-tisserands" class="clickable" alt="Tisserands">
+                    <a href="Tisserand.html" class="merguez dos facile">visite classique maisons des tisserands</a>
+                </div>
+            </div>
+        </div>
+
+
+
+            <div class="association-container">
+                <a href="association.html" class="association-link">
+                    <img src="public/accueil/association.png" alt="Association" class="association-img">
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+    <button id="btn-back" class="merguez" style="z-index: 6000;"><img src="public/Icons/croix.svg"
+                                                                                     alt=""></button>
+
+    <div id="videos1" class="cache ab affichage">
+        <iframe src="https://www.youtube.com/embed/--ZVkMlMiyA?si=vVE9mx2zyDdSpQZM" title="Lecteur YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+
+    </div>
+    <div id="videos2" class="cache   stylet2">
+        <iframe src="https://www.youtube.com/embed/BuX5dpnQF5g" title="Lecteur YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+    <div id="videos3" class="cache  stylet2">
+        <iframe src="https://www.youtube.com/embed/KgLU-ssCLyg" title="Lecteur YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+
+    <div id="info1" class="cache stylet affichage">
+        <img src="public/documents/manoir1.jpg" alt="">
+    </div>
+    <div id="info2" class="cache stylet  affichage">
+        <img src="public/documents/manoir2.jpg" alt="">
+    </div>
+    <div id="info3" class="cache stylet  affichage">
+        <img src="public/documents/manoir3.jpg" alt="">
+    </div>
+
+    <div id="info4" class="cache stylet affichage">
+        <img src="public/documents/moulin1.jpg" alt="">
+    </div>
+    <div id="info5" class="cache stylet affichage">
+        <img src="public/documents/moulin2.jpg" alt="">
+    </div>
+    <div id="info6" class="cache stylet affichage">
+        <img src="public/documents/moulin3.jpg" alt="">
+    </div>
+
+    <div id="info7" class="cache stylet affichage">
+        <img src="public/documents/tisserands1.jpg" alt="">
+    </div>
+    <div id="info8" class="cache stylet affichage">
+        <img src="public/documents/tisserands2.jpg" alt="">
+    </div>
+    <div id="info9" class="cache stylet affichage">
+        <img src="public/documents/tisserands3.jpg" alt="">
+    </div>
+
+    <div id="son1" class="cache son-conteneur stylet affichage3">
+        <div class="audio-player1" style="
+            text-align: center; 
+            padding: 40px 30px; 
+            background: rgba(255, 248, 240, 0.98); 
+            border-radius: 15px; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 40px auto;
+            border: 1px solid rgba(90, 74, 66, 0.1);
+        ">
+            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
+            <audio controls style="
+                width: 100%; 
+                max-width: 500px;
+                height: 60px;
+                margin: 20px 0;
+            ">
+                <source src="public/sound/Pdcts_Manoir_V2.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
+                Utilisez les contrôles pour mettre en pause ou ajuster le volume
+            </p>
+        </div>
+        <div class="audio-player2">
+            <p>Le quartier du Pavement a cette chance exceptionnelle d'avoir conservé un précieux pan de
+                l'histoire de Laval, avec cet ensemble du manoir de la Coconnière et ses dépendances, du
+                moulin et des maisons de Tisserands. Dès le premier siècle, la voie romaine commerciale et
+                militaire passait par l'actuelle rue du Pavement. C'est autour de cet axe que, bien plus tard,
+                s'est constitué le village de la Coconnière sur la terre de Cocon, fils d'un seigneur de Laval
+                au IXe siècle.
+                Au XIIIe siècle, le ruisseau barbé prend le nom de Saint-Nicolas. Une léprocerie est fondée à
+                l'emplacement de l'actuelle cité administrative, tandis qu'une fourche patibulaire de
+                pendaison y démontrait la puissance de justice. A la même époque, la famille Ouvrin
+                acquiert le manoir de la Coconnière, dont le fièvre couvre le village de Saint-Vénéran jusqu'à
+                la rive gauche de la Mayenne. La tour Rennes, que l'on voit encore rue du Pavement, date de
+                cette époque.
+                En 1658, c'est après avoir acquis la Coconnière, domaine qui relevait de la Châtaigny de
+                Polyniche, actuellement sur la commune de Forcé, que Jean de Laporte y fait bâtir un
+                lotissement de maison pour les louer à des tissiers ou tisserands sur l'actuelle rue du
+                Pavement. Son petit-fils sera lieutenant du roi à Québec, juste avant la prise par les Anglais.
+                Après la révolution de 1789, le domaine vendu comme bien national sera donné en 1850 par
+                Jacques Ruffin, prêtre, à la ville de Laval pour y créer un asile. La ville le cède peu après aux
+                petites sœurs des pauvres, des jeunes jugants pour y accueillir vieillards et épileptiques.Les
+                sœurs s'organisent pour nourrir les pensionnaires, culture, élevage, quête en ville et dans les
+                fermes alentours. Elles réussissent à créer un vaste ensemble remarquable, comprenant
+                dortoir, réfectoire et infirmerie. Elles améliorent le confort des résidents avec les chambres
+                individuelles, salles de bain, salons, installations modernes dans les cuisines ainsi qu'un
+                cabinet médical.
+                Environ 5000 vieillards et indigants y seront accueillis jusqu'en 1965. Les sœurs sont aidées
+                des pensionnaires en capacité pour la cuisine, le linge et le jardinage, ainsi que par des
+                bénévoles. En 2025, une Lavalois se souvient avoir traversé la ville pour y servir
+                bénévolement la soupe, quand un autre se rappelle enfant avoir vu les sœurs venir de la
+                ferme de ses parents récupérer des dons de nourriture. En 1970, l'asile revient à l'hôpital
+                pour une maison de retraite devenue Ehpad Jeanne-Jugand. En 2023, les bâtiments sont
+                désinfectés et un nouvel Ehpad bâti juste à côté, qui s'appelle le Virgin de Jeanne. En 2026,
+                le manoir sera mis en vente par le centre hospitalier.</p>
+        </div>
+    </div>
+
+    <div id="son2" class="cache son-conteneur stylet affichage3">
+        <div class="audio-player1" style="
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 248, 240, 0.98);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 40px auto;
+            border: 1px solid rgba(90, 74, 66, 0.1);
+        ">
+            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
+            <audio controls style="
+                width: 100%;
+                max-width: 500px;
+                height: 60px;
+                margin: 20px 0;
+            ">
+                <source src="public/sound/Pdcts_Moulin_V2.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
+                Utilisez les contrôles pour mettre en pause ou ajuster le volume
+            </p>
+        </div>
+        <div class="audio-player2">
+            <p>Moulins et Meunier. Les moulins à eau sont des témoins importants de notre histoire technologique,
+                économique et sociale. Dès la Gaule romaine, l'énergie des cours d'eau est utilisée par des moulins à
+                eau. Mais c'est il y a 800 ans, au XIIIe siècle, que ces machines complexes, dites aussi usines, se sont
+                établies sur les cours d'eau du Maine, ancien nom de la Mayenne.
+                Dès lors, les seigneurs établissent leur pouvoir sur le domaine public de l'eau. Ils attribuent les places
+                sur les rivières et les prises d'eau pour alimenter les moulins. Les paysans, qui se nourrissent
+                principalement de céréales, ont l'obligation, appelé le banc, de faire moudre les grains ou moulins.
+                Les paysans doivent verser au seigneur une partie de grains moulus, la mouture ou farine. Ils doivent
+                participer au remplacement des meules et aux corvées de services ou moulins. Le meunier se paye
+                en prélevant 1/16 des grains apportés par les paysans, mesurés en boisseaux. Sur 16 boisseaux des
+                grains, le meunier en reçoit un pour lui.
+                Le meunier est un personnage respecté pour ses compétences en mécanisme et en génie
+                hydraulique, et redouté par les paysans tard proches du seigneur.
+                La construction d'un moulin fait appel à des montages financiers et à différents corps de métiers.
+                Menuisiers, forgerons, tailleurs de pierre ainsi qu'aux bras des paysans. Les pièces du mécanisme
+                doivent être régulièrement réparées ou remplacées, car soumises à l'usure du frottement, des
+                engrenages et aux déformations dues aux crues de rivières. Si les moulins à eau servaient le plus
+                souvent à la production de farine en grande quantité, pour répondre aux besoins d'alimentation d'une
+                population croissante. Certains moulins avaient d'autres fonctions.
+                Moulin à dépiquer le chanvre, pour séparer l'écorce de la tige. Moulin à tan, pour broyer les écorces
+                de chêne ou de châtaignée, afin d'en exterre le tannin pour tanner les peaux, et rendre imputrécibles.
+                Moulin à foulon, pour assouplir les toiles. Moulin à scier du marbre, par exemple le marbre de
+                Saint-Berthevin. Moulin à forger le fer, propriété des maîtres des forges, actionnant de grands
+                soufflets pour le feu et des martinets pour marteler, former les outils de travail et les faire à cheval. En
+                Mayenne, ces moulins hydrauliques étaient implantés sur les cours d'eau de Larron, l'Ernée, l'Herbe, la
+                Joanne, l'Orte, le Trelon, le Vicoyen. Dans le sud de la France, des moulins produisent de l'huile par
+                pressage des olives. Le moulin était ainsi un pilier central de l'économie locale.
+                Tout au long des siècles, le ruisseau Saint-Nicolas a fourni son énergie gratuite, de force motrice à six
+                moulins. Ceux de Barbée, de la Grenouillère, aux deux moulins de la Coconnière, dont un encore en
+                place, de Saint-Nicolas et de la Tisonnière. Mais ces moulins sont désormais privés de leur roue à
+                aubes. Aux alentours de Laval, pour les journées du patrimoine, chaque troisième week-end de
+                septembre, des moulins encore en fonction s'ouvrent au public pour des démonstrations. Pour la
+                Meunerie et Fourapin, au moulin de Gourde, à Saint-Pierre-sur-Herbe, et au château de Thévalle, à
+                Chéméré-le-Roi. Pour la fabrication de papier à l'ancienne, à Sainte-Suzanne. Ces trois moulins se
+                trouvent sur la rivière de l'Herbe, à 20 minutes de Laval. Bonne visite et dégustation !</p>
+        </div>
+    </div>
+
+    <div id="son3" class="cache son-conteneur stylet affichage3">
+        <div class="audio-player1" style="
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 248, 240, 0.98);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 40px auto;
+            border: 1px solid rgba(90, 74, 66, 0.1);
+        ">
+            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
+            <audio controls style="
+                width: 100%;
+                max-width: 500px;
+                height: 60px;
+                margin: 20px 0;
+            ">
+                <source src="public/sound/Pdcts_Tisserands_V2.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
+                Utilisez les contrôles pour mettre en pause ou ajuster le volume
+            </p>
+        </div>
+        <div class="audio-player2">
+            <p>En 1435, des reçus du palais royal à la capitale prouvent l'achat des nappes et serviettes en toile de
+                Laval par la reine de France, Isabot de Bavière. En 1658, Jean de Laporte, homme d'affaires, qui vient
+                d'acquérir la coconnière, y établit un lotissement de 16 maisons à escalier pour les tisserands, encore
+                en place, trois siècles et demi après, sur notre belle rue du pavement. La même année, un règlement
+                encadre la fabrication de la toile du lin de Laval pour contrer les marchands espagnols qui cherchent à
+                acheter la toile de Laval sans passer par les blanchisseries lavaloises.
+                Le lin et le chanvre sont des plantes qui se cultivaient pour le tissage depuis longtemps dans l'ouest
+                de la France grâce à son climat tempéré. Avant d'être transformé en fil à tisser, les tiges de lin doivent
+                subir le rouissage pour faire macérer les bottes de lin, quelques semaines au bord d'un cours d'eau
+                calme, afin de les attendrir et permettre de séparer l'écorce de la tige centrale.Le travail est familial.
+                Les femmes et les enfants forment le fil à partir des paquets de filas appelés poupées, tandis que
+                souvent, c'est le père qui tisse sur le métier. Les familles tisserands ou tissiers travaillent dans des
+                conditions pénibles, dans un atelier appelé l'ouvroir.C'est sombre pour garder l'humidité, nécessaire à
+                souplesse du fil de lin.
+                L'atelier est bruyant par le pédalier qui actionne la trame pour faire passer le fil avec la navette, ce qui
+                résonne en permanence sur le métier en bois.
+                La pièce semi-enterrée est simplement éclairée par des petites ouvertures à ras de la rue ou du
+                jardin. L'accès au séjour se fait donc par un escalier côté rue. Au grenier, sous le toit de chaume, sont
+                conservés les produits du jardin. Le manuscrit de 1659 du bail de Saint-Condes dit que le locataire
+                s'engage à prendre soin du logis en bon père de famille.
+                Une fois tissées, les toiles de lin sont exposées plusieurs jours au soleil pour les blanchir, activité
+                réservée aux blanchisseries. Dès la fin du XVIIe siècle, les marchands les plus riches affrètent des
+                bateaux pour le commerce autour de l'océan Atlantique. La toile est acheminée vers les actuels
+                Mexique, Colombie, Pérou ainsi que vers le golfe de Guinée.
+                Avec ses essors de la toile, des paysans pauvres quittent leur campagne pour les faubourgs de Laval,
+                comme ici à la coconnière ou Saint-Vénéran. Ils travaillent pour les marchands de toile qui leur
+                prêtent le métier à tisser. Leur font l'avance des bobines de fils et leur achètent le tissu appelé
+                toile.Pour être vendu, la toile doit être de 100 aunes, soit 150 mètres, ce qui prend 2 mois à tisser.
+                La puissance des marchands de toile peut se voir encore aujourd'hui, à Laval et ses environs, par leurs
+                luxueuses habitations appelées hôtels particuliers, au style Renaissance classique ou néoclassique.
+                Malgré cet essor, la manufacture de lin était vulnérable. En période de crise due aux mauvaises
+                récoltes, aux guerres, aux piratages et aux tempêtes sur les mers, des familles de tisserands
+                pouvaient se retrouver à la rue. Pour parer aux émeutes de la faim, les autorités et les riches
+                bourgeois organisaient alors des distributions de pain.
+                En résumé, le tissage de lin a constitué la trâne de l'économie de Laval sur plusieurs siècles.
+                Avant la Révolution, c'est un bon tiers de la population lavalloise qui vivait de cette activité. Avant la
+                Révolution, c'est un bon tiers de la population lavalloise qui vivait de la population lavalloise.</p>
+        </div>
+    </div>
+
+
+
+    <button id="btn-retour" class="merguez" style="z-index: 1002;"><img src="public/Icons/svg/home.svg"
+            alt=""></button>
+    <button id="toggleAmbiance" class="speaker" style="display: none;">
+        <!-- Mettez le chemin vers votre image de son coupé par défaut -->
+        <img id="ambianceIcon" src="public/Icons/mute.png" alt="Son coupé" width="40">
+    </button>
+    <canvas id="threejs-canvas"></canvas>
+    <audio id="ambiance" loop preload="auto">
+
+    </audio>
+
+    <!-- Contenu principal -->
+    <section id="accueil1">
+
+        <img src="public/accueil/fond_bois.png" class="accueil_fond" alt="Image de fond">
+        <div class="disposition">
+
+            <img src="public/accueil/enveloppe.png" class="accueil accueil_elt_2" alt="Enveloppe">
+            <!--<img src="public/accueil/plan.png" class="accueil accueil_elt_3" alt="Plan">-->
+            <img src="public/accueil/blueprint.png" class="accueil accueil_elt_1" alt="Plan technique">
+            <img src="public/accueil/tasse.png" class="accueil accueil_elt_4" alt="Tasse">
+            <img src="public/accueil/tissage.png" class="accueil accueil_elt_5" alt="Tissage">
+            <img src="public/accueil/carnet.png" class="accueil accueil_elt_6" alt="carnet">
+
+
+        </div>
+    </section>
+
+
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>

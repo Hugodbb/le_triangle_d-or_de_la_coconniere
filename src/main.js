@@ -235,7 +235,7 @@ function chargerManoir() {
 
     // 2. On change juste l'image de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('public/manoir.jpg', (tex) => {
+    textureLoader.load('/public/manoir.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -244,15 +244,15 @@ function chargerManoir() {
     });
 
     sphere.rotation.y = 0;
-    console.log('Chargement de l\'ambiance sonore...');
-    changerAmbiance('audio_manoir.mp3');
+    console.log('Chargement de l'ambiance sonore...');
+    changerAmbiance('/public/audio_manoir.mp3');
 
     // Ajout des sprites interactifs
     console.log('Ajout des sprites interactifs...');
-    ajouterSpriteFond(-50, 0, -50, "public/Icons/doc_icon.png", "info1");
-    ajouterSpriteFond(50, 0, -50, "public/Icons/doc_icon.png", "info2");
-    ajouterSpriteFond(-25, 0, 70, "public/Icons/doc_icon.png", "info3");
-    ajouterSpriteFond(-80, 0, 25, "public/Icons/podcast_icon.png", "son1");
+    ajouterSpriteFond(-50, 0, -50, "/public/Icons/doc_icon.png", "info1");
+    ajouterSpriteFond(50, 0, -50, "/public/Icons/doc_icon.png", "info2");
+    ajouterSpriteFond(-25, 0, 70, "/public/Icons/doc_icon.png", "info3");
+    ajouterSpriteFond(-80, 0, 25, "/public/Icons/podcast_icon.png", "son1");
 
 
     // Ajout des infobulles
@@ -286,7 +286,7 @@ function chargerMoulin() {
 
     // 3. Chargement de la texture de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('public/moulin.jpg', (tex) => {
+    textureLoader.load('/public/moulin.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -428,7 +428,7 @@ function chargerTisserands() {
 
     // 3. Chargement de la texture de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('./public/tisserands.jpg', (tex) => {
+    textureLoader.load('/public/tisserands.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -436,11 +436,11 @@ function chargerTisserands() {
 
         // 4. Ajout des sprites interactifs
         console.log('Ajout des sprites interactifs...');
-        ajouterSpriteFond(-50, 0, -50, "public/Icons/doc_icon.png", "info7");
-        ajouterSpriteFond(50, 0, -50, "public/Icons/doc_icon.png", "info8");
-        ajouterSpriteFond(-25, 0, 70, "public/Icons/doc_icon.png", "info9");
-        ajouterSpriteFond(-80, 25,  -15,"public/Icons/video_icon.png", "videos3");
-        ajouterSpriteFond(55, 15, 0,"public/Icons/podcast_icon.png", "son3");
+        ajouterSpriteFond(-50, 0, -50, "/public/Icons/doc_icon.png", "info7");
+        ajouterSpriteFond(50, 0, -50, "/public/Icons/doc_icon.png", "info8");
+        ajouterSpriteFond(-25, 0, 70, "/public/Icons/doc_icon.png", "info9");
+        ajouterSpriteFond(-80, 25, -15, "/public/Icons/video_icon.png", "videos3");
+        ajouterSpriteFond(55, 15, 0, "/public/Icons/podcast_icon.png", "son3");
 
         // 5. Ajout des infobulles
         ajouterSpriteInfo(-50, 0, -50, "Voir les détails des tisserands");
@@ -907,14 +907,15 @@ setTimeout(() => {
 
 function changerAmbiance(nomFichier) {
     if (audioPlayer) {
-        // 1. Définition du chemin
-        // ATTENTION : Vérifiez si votre dossier s'appelle "sound" (singulier) ou "sounds" (pluriel) dans Windows/Mac
-        // Dans votre HTML c'était "sound", donc je garde "sound" ici.
-        const cheminComplet = 'public/sound/' + nomFichier;
+        // 1. Nettoyage du nom de fichier pour éviter les doubles slashs
+        const nomFichierNettoye = nomFichier.startsWith('/') ? nomFichier.substring(1) : nomFichier;
+        
+        // 2. Définition du chemin absolu
+        const cheminComplet = '/public/sound/' + nomFichierNettoye;
 
         console.log("Chargement audio : " + cheminComplet);
 
-        // 2. Assignation directe à la balise audio (pas au <source>)
+        // 3. Assignation directe à la balise audio (pas au <source>)
         audioPlayer.src = cheminComplet;
 
         // 3. IMPORTANT : Forcer le rechargement du flux audio

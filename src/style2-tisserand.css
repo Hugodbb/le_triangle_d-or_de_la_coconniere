@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'Missing Lovely';
-    src: url('../public/fonts/Missing Lovely Regular.woff2') format('woff2');
+    src: url('/fonts/Missing Lovely Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Superbusy Activity';
-    src: url('./font/SuperbusyActivity-Regular.woff2') format('woff2');
+    src: url('/fonts/SuperbusyActivity-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Missing Lovely';
     /* Attention aux espaces dans le nom du fichier, les guillemets sont importants */
-    src: url('../public/fonts/Missing Lovely Regular.woff2') format('woff2');
+    src: url('/fonts/Missing Lovely Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* Déclaration de la police Superbusy Activity */
 @font-face {
     font-family: 'Superbusy Activity';
-    src: url('./font/SuperbusyActivity-Regular.woff2') format('woff2');
+    src: url('/fonts/SuperbusyActivity-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -179,7 +179,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url('../public/accueil/fond_bois.png') no-repeat center center;
+    background: url('/accueil/fond_bois.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;

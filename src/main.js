@@ -58,7 +58,7 @@ function stopAllAudioPlayers(exceptElement = null) {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
         isAudioPlaying = false;
-        if (iconAudio) iconAudio.src = 'public/Icons/mute.png';
+        if (iconAudio) iconAudio.src = '/Icons/mute.png';
     }
     
     // Arrêter tous les autres lecteurs audio
@@ -161,7 +161,7 @@ function nettoyerScene() {
 
 // Ajouter une info-bulle (Texte)
 function ajouterSpriteInfo(x, y, z, texteInfo) {
-    const map = textureLoader.load('public/Icons/svg/voir.svg');
+    const map = textureLoader.load('/Icons/svg/voir.svg');
     const material = new THREE.SpriteMaterial({ 
         map: map, 
         color: 0x000000, // Couleur noire
@@ -181,7 +181,7 @@ function ajouterSpriteInfo(x, y, z, texteInfo) {
 }
 
 function ajouterSpriteInfo1(x, y, z, texteInfo) {
-    const map = textureLoader.load('public/Icons/svg/play.svg');
+    const map = textureLoader.load('/Icons/svg/play.svg');
     const material = new THREE.SpriteMaterial({ map: map, transparent: true, depthTest: false });
     const sprite = new THREE.Sprite(material);
 
@@ -235,7 +235,7 @@ function chargerManoir() {
 
     // 2. On change juste l'image de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('public/manoir.jpg', (tex) => {
+    textureLoader.load('/manoir.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -249,10 +249,10 @@ function chargerManoir() {
 
     // Ajout des sprites interactifs
     console.log('Ajout des sprites interactifs...');
-    ajouterSpriteFond(-50, 0, -50, "public/Icons/doc_icon.png", "info1");
-    ajouterSpriteFond(50, 0, -50, "public/Icons/doc_icon.png", "info2");
-    ajouterSpriteFond(-25, 0, 70, "public/Icons/doc_icon.png", "info3");
-    ajouterSpriteFond(-80, 0, 25, "public/Icons/podcast_icon.png", "son1");
+    ajouterSpriteFond(-50, 0, -50, "/Icons/doc_icon.png", "info1");
+    ajouterSpriteFond(50, 0, -50, "/Icons/doc_icon.png", "info2");
+    ajouterSpriteFond(-25, 0, 70, "/Icons/doc_icon.png", "info3");
+    ajouterSpriteFond(-80, 0, 25, "/Icons/podcast_icon.png", "son1");
 
 
     // Ajout des infobulles
@@ -286,7 +286,7 @@ function chargerMoulin() {
 
     // 3. Chargement de la texture de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('public/moulin.jpg', (tex) => {
+    textureLoader.load('/moulin.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -337,11 +337,11 @@ function chargerMoulin() {
 
         // 5. Ajout des sprites interactifs
         console.log('Ajout des sprites interactifs...');
-        ajouterSpriteFond(-50, 0, -50, "public/Icons/doc_icon.png", "info4");
-        ajouterSpriteFond(50, 0, -50, "public/Icons/doc_icon.png", "info5");
-        ajouterSpriteFond(-25, 0, 70, "public/Icons/doc_icon.png", "info6");
-        ajouterSpriteFond(-80, 25,  -15,"public/Icons/video_icon.png", "videos2");
-        ajouterSpriteFond(25, 15, 75, "public/Icons/podcast_icon.png", "son2");
+        ajouterSpriteFond(-50, 0, -50, "/Icons/doc_icon.png", "info4");
+        ajouterSpriteFond(50, 0, -50, "/Icons/doc_icon.png", "info5");
+        ajouterSpriteFond(-25, 0, 70, "/Icons/doc_icon.png", "info6");
+        ajouterSpriteFond(-80, 25,  -15,"/Icons/video_icon.png", "videos2");
+        ajouterSpriteFond(25, 15, 75, "/Icons/podcast_icon.png", "son2");
 
 
         // 6. Ajout des infobulles
@@ -363,7 +363,7 @@ function chargerMoulin() {
         const loader = new GLTFLoader();
 
         loader.load(
-            'models/moulin.glb',
+            '/models/moulin.glb',
             // onLoad
             function (gltf) {
                 console.log('Modèle 3D chargé avec succès');
@@ -428,7 +428,7 @@ function chargerTisserands() {
 
     // 3. Chargement de la texture de fond
     console.log('Chargement de la texture du fond...');
-    textureLoader.load('tisserands.jpg', (tex) => {
+    textureLoader.load('/tisserands.jpg', (tex) => {
         console.log('Texture du fond chargée');
         sphere.material.map = tex;
         sphere.material.needsUpdate = true;
@@ -436,11 +436,11 @@ function chargerTisserands() {
 
         // 4. Ajout des sprites interactifs
         console.log('Ajout des sprites interactifs...');
-        ajouterSpriteFond(-50, 0, -50, "public/Icons/doc_icon.png", "info7");
-        ajouterSpriteFond(50, 0, -50, "public/Icons/doc_icon.png", "info8");
-        ajouterSpriteFond(-25, 0, 70, "public/Icons/doc_icon.png", "info9");
-        ajouterSpriteFond(-80, 25,  -15,"public/Icons/video_icon.png", "videos3");
-        ajouterSpriteFond(55, 15, 0,"public/Icons/podcast_icon.png", "son3");
+        ajouterSpriteFond(-50, 0, -50, "/Icons/doc_icon.png", "info7");
+        ajouterSpriteFond(50, 0, -50, "/Icons/doc_icon.png", "info8");
+        ajouterSpriteFond(-25, 0, 70, "/Icons/doc_icon.png", "info9");
+        ajouterSpriteFond(-80, 25,  -15,"/Icons/video_icon.png", "videos3");
+        ajouterSpriteFond(55, 15, 0,"/Icons/podcast_icon.png", "son3");
 
         // 5. Ajout des infobulles
         ajouterSpriteInfo(-50, 0, -50, "Voir les détails des tisserands");
@@ -511,7 +511,7 @@ function fermerVue3D() {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
         isAudioPlaying = false;
-        if(iconAudio) iconAudio.src = 'public/Icons/mute.png';
+        if(iconAudio) iconAudio.src = '/Icons/mute.png';
     }
 
     // Réinitialiser l'élément actif
@@ -552,11 +552,11 @@ if (btnAudio) {
     btnAudio.addEventListener('click', () => {
         if (isAudioPlaying) {
             audioPlayer.pause();
-            if(iconAudio) iconAudio.src = 'public/Icons/mute.png';
+            if(iconAudio) iconAudio.src = '/Icons/mute.png';
             isAudioPlaying = false;
         } else {
             audioPlayer.play().catch(e => console.log("Erreur lecture:", e));
-            if(iconAudio) iconAudio.src = 'public/Icons/sonblanc.png';
+            if(iconAudio) iconAudio.src = '/Icons/sonblanc.png';
             isAudioPlaying = true;
         }
     });
@@ -910,7 +910,7 @@ function changerAmbiance(nomFichier) {
         // 1. Définition du chemin
         // ATTENTION : Vérifiez si votre dossier s'appelle "sound" (singulier) ou "sounds" (pluriel) dans Windows/Mac
         // Dans votre HTML c'était "sound", donc je garde "sound" ici.
-        const cheminComplet = 'public/sound/' + nomFichier;
+        const cheminComplet = '/sound/' + nomFichier;
 
         console.log("Chargement audio : " + cheminComplet);
 

@@ -54,6 +54,7 @@ p {
     font-family: "Albert Sans", sans-serif;
     font-weight: 400;
     color: var(--light-text);
+    text-align: justify;
 }
 
 /* ===== HEADER ===== */
@@ -151,7 +152,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
 }
 
@@ -190,7 +191,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
 }
 
 .edito-text p {
@@ -236,7 +237,7 @@ h1 .highlight {
 }
 
 .podcast-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -301,7 +302,7 @@ h1 .highlight {
 }
 
 .video-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -421,6 +422,7 @@ h1 .highlight {
 
     .edito-text {
         font-size: 0.9rem;
+        text-align: justify;
     }
 
     .theme-section {
@@ -468,7 +470,7 @@ h1 .highlight {
 
 /* ===== FOOTER ===== */
 .site-footer {
-    background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.03));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.03));
     padding: 18px 12px;
     text-align: center;
     font-size: 0.95rem;

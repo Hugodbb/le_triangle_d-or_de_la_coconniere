@@ -13,6 +13,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .merguez:hover {
     background-color: var(--hover-color);
     transform: translateY(-2px);
@@ -97,6 +98,7 @@ p {
     font-family: "Albert Sans", sans-serif;
     font-weight: 400;
     color: var(--light-text);
+    text-align: justify;
 }
 
 /* ===== HEADER ===== */
@@ -194,7 +196,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
 }
 
@@ -233,7 +235,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
 }
 
 .edito-text p {
@@ -279,7 +281,7 @@ h1 .highlight {
 }
 
 .podcast-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -344,7 +346,7 @@ h1 .highlight {
 }
 
 .video-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -464,6 +466,7 @@ h1 .highlight {
 
     .edito-text {
         font-size: 0.9rem;
+        text-align: justify;
     }
 
     .theme-section {

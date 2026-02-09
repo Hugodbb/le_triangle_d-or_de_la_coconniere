@@ -39,7 +39,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: none; /* Caché par défaut */
+    display: none;
+    /* Caché par défaut */
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -52,7 +53,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: none; /* Caché par défaut */
+    display: none;
+    /* Caché par défaut */
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -99,6 +101,7 @@
     padding: 0;
     margin: 0;
 }
+
 p {
     font-family: "Albert Sans", sans-serif;
     font-optical-sizing: auto;
@@ -137,23 +140,26 @@ html {
     scroll-behavior: smooth;
 }
 
-.bons{
+.bons {
     display: flex;
     flex-direction: column;
 
 }
 
-.sympa{
+.sympa {
     /* 1. ACTIVATION DU CENTRAGE */
-    display: flex;           /* Indispensable pour que justify-content marche */
-    justify-content: center; /* Centre horizontalement */
+    display: flex;
+    /* Indispensable pour que justify-content marche */
+    justify-content: center;
+    /* Centre horizontalement */
     margin-bottom: 0;
     width: 100%;
     text-align: center;
     margin-top: 25px;
-    font-family: 'Superbusy Activity', sans-serif; /* Fallback de sécurité */
+    font-family: 'Superbusy Activity', sans-serif;
+    /* Fallback de sécurité */
     font-size: clamp(1rem, 5vw, 5rem);
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .mini_titre {
@@ -298,10 +304,13 @@ body {
 }
 
 /* Positionnement des images */
-.accueil_btn_1 { }
-.accueil_btn_2 { }
-.accueil_btn_3 { }
-.accueil_btn_4 { }
+.accueil_btn_1 {}
+
+.accueil_btn_2 {}
+
+.accueil_btn_3 {}
+
+.accueil_btn_4 {}
 
 /* Conteneur des boutons de visite */
 .parcours {
@@ -323,14 +332,16 @@ body {
     align-items: center;
     border-radius: 15px;
     text-decoration: none;
-    margin-top: -100px; /* Déplacement accru vers le haut */
+    margin-top: -100px;
+    /* Déplacement accru vers le haut */
 }
 
 
 .visite a {
     display: flex;
     flex-direction: column;
-{{ }}
+
+
     align-items: center;
     text-decoration: none;
 
@@ -414,7 +425,8 @@ body {
 }
 
 .association-img {
-    width: 120px; /* Ajustez la taille selon vos besoins */
+    width: 120px;
+    /* Ajustez la taille selon vos besoins */
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -429,7 +441,8 @@ body {
 }
 
 .association-img {
-    max-width: 120px; /* Taille réduite à 120px */
+    max-width: 120px;
+    /* Taille réduite à 120px */
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -553,6 +566,7 @@ body {
         padding: 0.8rem;
     }
 }
+
 /* Animation de battement pour les boutons */
 @keyframes pulse {
     0% {
@@ -572,8 +586,9 @@ body {
 .merguez {
     animation: pulse 5s infinite ease-in-out;
 }
-merguez1{
-    animation:none;
+
+merguez1 {
+    animation: none;
     background-color: #4a6fa5;
     color: white !important;
     padding: 10px 20px;
@@ -586,9 +601,11 @@ merguez1{
     margin: 5px;
     display: inline-block;
 }
+
 .bl1 {
     z-index: 1002;
 }
+
 .btn-nav {
     z-index: 1002;
     margin: 10px;
@@ -612,6 +629,7 @@ merguez1{
     background-color: var(--hover-color);
     transform: scale(0.5);
 }
+
 /* Canvas 3D */
 #threejs-canvas {
     position: fixed;
@@ -717,9 +735,7 @@ merguez1{
         margin-bottom: 5px;
     }
 
-    #btn-retour {
-
-    }
+    #btn-retour {}
 }
 
 /* Très petits écrans */
@@ -789,10 +805,12 @@ html {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(139, 111, 71, 0.4);
     }
+
     70% {
         transform: scale(1.02);
         box-shadow: 0 0 0 10px rgba(139, 111, 71, 0);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(139, 111, 71, 0);
@@ -802,7 +820,7 @@ html {
 body {
     background-color: var(--bg-color);
     font-family: 'Missing Lovely', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-{{  }}
+
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1.05rem;
@@ -1462,24 +1480,30 @@ input:checked+.slider:before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* INDISPENSABLE : Prend toute la hauteur de l'écran */
+    height: 100vh;
+    /* INDISPENSABLE : Prend toute la hauteur de l'écran */
 
     /* 2. Flexbox pour le centrage et l'espacement */
     display: flex;
-    align-items: center;    /* Centre verticalement */
-    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    justify-content: center;
+    /* Centre horizontalement */
 
     /* 3. L'espacement égal entre chaque bloc */
 
 
     /* 4. Gestion de la superposition */
-    z-index: 2000; /* Pour être sûr d'être au-dessus de la 3D */
-    pointer-events: none; /* Important : permet de cliquer sur la 3D dans les zones vides */
+    z-index: 2000;
+    /* Pour être sûr d'être au-dessus de la 3D */
+    pointer-events: none;
+    /* Important : permet de cliquer sur la 3D dans les zones vides */
 }
 
 /* Styles pour les images des boutons dans le parcours */
 .parcours img {
-    max-width: 160px; /* Taille réduite des images */
+    max-width: 160px;
+    /* Taille réduite des images */
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -1556,7 +1580,7 @@ input:checked+.slider:before {
         width: 90%;
         padding: 15px;
     }
-    
+
     .parcours-container {
         gap: 20px;
     }
@@ -1572,52 +1596,71 @@ input:checked+.slider:before {
 
 /* L'image garde ses proportions et ne s'étire pas */
 .affichage img {
-{{ }}
     /* Largeur max : 100% de l'écran (mobile) ou une taille fixe (desktop) */
-    max-width: 70%;  /* Laisse une petite marge sur les côtés */
-    width: auto;     /* Garde le ratio original ! */
-    height: auto;    /* Garde le ratio original ! */
+    max-width: 70%;
+    /* Laisse une petite marge sur les côtés */
+    width: auto;
+    /* Garde le ratio original ! */
+    height: auto;
+    /* Garde le ratio original ! */
 
     /* Optionnel : Limiter la largeur sur grand écran pour pas que ce soit géant */
     /* max-width: 800px; */
 
     display: block;
-    margin: 0 auto;  /* Centrage horizontal */
+    margin: 0 auto;
+    /* Centrage horizontal */
 
     /* Réinitialisation */
     position: static !important;
     transform: none !important;
-    object-fit: contain; /* Assure que l'image n'est jamais déformée */
+    object-fit: contain;
+    /* Assure que l'image n'est jamais déformée */
 }
-.ab  {
+
+@media (max-width: 768px) {
+    .affichage img {
+        max-width: 95%;
+    }
+}
+
+.ab {
     width: 100%;
     aspect-ratio: 16 / 9;
     /* 2. Centrage parfait */
     position: absolute;
-    top: 50%;      /* Pousse le haut de la vidéo au milieu de l'écran */
-    left: 50%;     /* Pousse la gauche de la vidéo au milieu de l'écran */
+    top: 50%;
+    /* Pousse le haut de la vidéo au milieu de l'écran */
+    left: 50%;
+    /* Pousse la gauche de la vidéo au milieu de l'écran */
     /* Recule la vidéo de la moitié de sa propre taille pour la centrer exactement */
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px); /* Floute l'arrière-plan de 10 pixels */
+    backdrop-filter: blur(10px);
+    /* Floute l'arrière-plan de 10 pixels */
     -webkit-backdrop-filter: blur(10px);
 
     /* 3. Esthétique */
     border: none;
-    border-radius: 15px; /* Bordures un peu plus arrondies */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /* Ombre plus marquée pour le détacher du fond */
+    border-radius: 15px;
+    /* Bordures un peu plus arrondies */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    /* Ombre plus marquée pour le détacher du fond */
     z-index: 999;
 }
 
-.stylet2 iframe{
+.stylet2 iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     /* 2. Centrage parfait */
     position: absolute;
-    top: 50%;      /* Pousse le haut de la vidéo au milieu de l'écran */
-    left: 50%;     /* Pousse la gauche de la vidéo au milieu de l'écran */
+    top: 50%;
+    /* Pousse le haut de la vidéo au milieu de l'écran */
+    left: 50%;
+    /* Pousse la gauche de la vidéo au milieu de l'écran */
     /* Recule la vidéo de la moitié de sa propre taille pour la centrer exactement */
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px); /* Floute l'arrière-plan de 10 pixels */
+    backdrop-filter: blur(10px);
+    /* Floute l'arrière-plan de 10 pixels */
     -webkit-backdrop-filter: blur(10px);
 }
 
@@ -1640,6 +1683,7 @@ input:checked+.slider:before {
 
 
 }
+
 .speaker {
     border: none;
     outline: none;
@@ -1659,7 +1703,7 @@ input:checked+.slider:before {
     transition: all 0.3s ease;
 }
 
-.speaker img{
+.speaker img {
     border: none;
     outline: none;
 
@@ -1688,49 +1732,60 @@ input:checked+.slider:before {
 
 }
 
-.stylet  {
+.stylet {
     width: 70%;
     height: 80%;
     aspect-ratio: 16 / 9;
     background-color: #ffe6c2;
     /* 2. Centrage parfait */
     position: absolute;
-    top: 50%;      /* Pousse le haut de la vidéo au milieu de l'écran */
-    left: 50%;     /* Pousse la gauche de la vidéo au milieu de l'écran */
+    top: 50%;
+    /* Pousse le haut de la vidéo au milieu de l'écran */
+    left: 50%;
+    /* Pousse la gauche de la vidéo au milieu de l'écran */
     /* Recule la vidéo de la moitié de sa propre taille pour la centrer exactement */
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px); /* Floute l'arrière-plan de 10 pixels */
+    backdrop-filter: blur(10px);
+    /* Floute l'arrière-plan de 10 pixels */
     -webkit-backdrop-filter: blur(10px);
 
     /* 3. Esthétique */
     border: none;
-    border-radius: 15px; /* Bordures un peu plus arrondies */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /* Ombre plus marquée pour le détacher du fond */
+    border-radius: 15px;
+    /* Bordures un peu plus arrondies */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    /* Ombre plus marquée pour le détacher du fond */
     z-index: 999;
 }
-.stylet2  {
+
+.stylet2 {
     width: 70%;
     height: 80%;
     aspect-ratio: 16 / 9;
     background-color: #ffe6c2;
     /* 2. Centrage parfait */
     position: absolute;
-    top: 50%;      /* Pousse le haut de la vidéo au milieu de l'écran */
-    left: 50%;     /* Pousse la gauche de la vidéo au milieu de l'écran */
+    top: 50%;
+    /* Pousse le haut de la vidéo au milieu de l'écran */
+    left: 50%;
+    /* Pousse la gauche de la vidéo au milieu de l'écran */
     /* Recule la vidéo de la moitié de sa propre taille pour la centrer exactement */
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px); /* Floute l'arrière-plan de 10 pixels */
+    backdrop-filter: blur(10px);
+    /* Floute l'arrière-plan de 10 pixels */
     -webkit-backdrop-filter: blur(10px);
 
     /* 3. Esthétique */
     border: none;
-    border-radius: 15px; /* Bordures un peu plus arrondies */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /* Ombre plus marquée pour le détacher du fond */
+    border-radius: 15px;
+    /* Bordures un peu plus arrondies */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    /* Ombre plus marquée pour le détacher du fond */
     z-index: 9999;
 }
 
 
-.speaker2{
+.speaker2 {
     color: #ddd;
     width: 55px;
 }
@@ -1783,22 +1838,13 @@ input:checked+.slider:before {
 
 }
 
-.accueil_btn_2 {
+.accueil_btn_2 {}
 
+.accueil_btn_1 {}
 
-}
+.accueil_btn_3 {}
 
-.accueil_btn_1 {
-
-}
-
-.accueil_btn_3 {
-
-}
-
-.accueil_btn_4 {
-
-}
+.accueil_btn_4 {}
 
 /* Conteneur du switch */
 .switch-container {
@@ -1853,7 +1899,7 @@ input:checked+.slider:before {
     height: 26px;
 }
 
-.affichage{
+.affichage {
     z-index: 1002;
 }
 
@@ -1949,6 +1995,7 @@ input:checked+.slider:before {
         font-size: 2.2rem;
     }
 }
+
 .dos {
     display: inline-block;
     width: 120px;
@@ -1959,6 +2006,7 @@ input:checked+.slider:before {
     line-height: 1.2;
     margin-top: 150px;
 }
+
 /* --- LECTEUR VIDÉO POPUP --- */
 #video-overlay {
     position: fixed;
@@ -2062,18 +2110,19 @@ input:checked+.slider:before {
 
     }
 
-    .parcours{
+    .parcours {
         flex-direction: column;
         margin: 0;
         gap: 0;
 
     }
 
-    .visite{
+    .visite {
         flex-direction: row;
     }
 
 }
+
 button,
 a,
 .merguez,
@@ -2083,7 +2132,9 @@ a,
 #btn-retour,
 #btn-back,
 .btn-fermer-video,
-.visite1, .visite2, .visite3 {
+.visite1,
+.visite2,
+.visite3 {
     cursor: pointer !important;
 }
 
@@ -2091,6 +2142,7 @@ a,
 body {
     cursor: default;
 }
+
 .cache {
     display: none;
 }
@@ -2115,7 +2167,8 @@ body {
     overflow-x: hidden;
 
     z-index: 2000;
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour mieux voir l'image */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fond sombre pour mieux voir l'image */
 
     /* Centre le contenu si l'image est moins large que l'écran */
     display: none;
@@ -2125,9 +2178,11 @@ body {
     /* Réinitialisation */
     transform: none !important;
     border-radius: 0 !important;
-    padding: 20px 0; /* Un peu d'espace en haut et en bas */
+    padding: 20px 0;
+    /* Un peu d'espace en haut et en bas */
 }
-.affichage3{
+
+.affichage3 {
     position: fixed;
     top: 0;
     left: 0;
@@ -2139,7 +2194,8 @@ body {
     overflow-x: hidden;
 
     z-index: 2000;
-    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre pour mieux voir l'image */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fond sombre pour mieux voir l'image */
 
     /* Centre le contenu si l'image est moins large que l'écran */
     display: none;
@@ -2149,7 +2205,8 @@ body {
     /* Réinitialisation */
     transform: none !important;
     border-radius: 0 !important;
-    padding: 20px 0; /* Un peu d'espace en haut et en bas */
+    padding: 20px 0;
+    /* Un peu d'espace en haut et en bas */
 }
 
 .audio-player2 {

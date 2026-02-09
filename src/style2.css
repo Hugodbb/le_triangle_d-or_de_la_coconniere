@@ -98,6 +98,7 @@ p {
     font-family: "Albert Sans", sans-serif;
     font-weight: 400;
     color: var(--light-text);
+    text-align: justify;
 }
 
 /* ===== HEADER ===== */
@@ -118,7 +119,7 @@ p {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    background-color: #ffe497;
     border-radius: 50%;
     opacity: 0.5;
 }
@@ -195,7 +196,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
 }
 
@@ -234,7 +235,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
 }
 
 .edito-text p {
@@ -341,7 +342,7 @@ h1 .highlight {
     font-size: 0.95rem;
     line-height: 1.8;
     color: var(--light-text);
-    text-align: center;
+    text-align: justify;
 }
 
 /* ===== SECTION BOUTON FINAL ===== */
@@ -538,7 +539,7 @@ h1 .highlight {
     font-size: 1rem;
     line-height: 1.9;
     color: #555;
-    text-align: center;
+    text-align: justify;
     margin: 0;
 }
 
@@ -581,7 +582,7 @@ h1 .highlight {
 }
 
 .podcast-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -619,7 +620,7 @@ h1 .highlight {
 
 /* ===== FOOTER ===== */
 .site-footer {
-    background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.06));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.06));
     padding: 18px 12px;
     text-align: center;
     font-size: 0.95rem;
@@ -670,7 +671,7 @@ h1 .highlight {
 }
 
 .video-description {
-    text-align: center;
+    text-align: justify;
     font-size: 1rem;
     color: #666;
     line-height: 1.8;
@@ -684,7 +685,7 @@ h1 .highlight {
 
     .text-body p {
         font-size: 0.95rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .podcast-section {
@@ -708,11 +709,12 @@ h1 .highlight {
     }
 
     .edito-text {
-        text-align: center;
+        text-align: justify;
     }
 }
 
 @media (max-width: 576px) {
+
     .text-section,
     .podcast-section,
     .video-section {
@@ -738,7 +740,7 @@ h1 .highlight {
     }
 
     .edito-text {
-        text-align: center;
+        text-align: justify;
         font-size: 0.95rem;
     }
 }

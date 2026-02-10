@@ -61,8 +61,8 @@
 
 /* ===== VARIABLES CSS ===== */
 :root {
-    --primary-color: #8B6F47;
-    --secondary-color: #D4A574;
+    --primary-color: #e9c35b;
+    --secondary-color: #e9c35b;
     --accent-color: #6B5935;
     --text-color: #333;
     --light-text: #666;
@@ -119,7 +119,7 @@ p {
     right: -10%;
     width: 500px;
     height: 500px;
-    background-color: #ffe497;
+
     border-radius: 50%;
     opacity: 0.5;
 }

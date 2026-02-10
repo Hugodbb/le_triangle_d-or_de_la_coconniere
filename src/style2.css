@@ -365,6 +365,7 @@ h1 .highlight {
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid white;
+    margin-top: 15px;
 }
 
 .btn-final:hover {

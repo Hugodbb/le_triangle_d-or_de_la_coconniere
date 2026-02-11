@@ -528,20 +528,66 @@ function fermerVue3D() {
 
 // --- 8. ÉCOUTEURS D'ÉVÉNEMENTS (CLICS) ---
 
-// Boutons du menu principal
-document.getElementById('btn-manoir').addEventListener('click', () => {
-    chargerManoir();
-    ouvrirVue3D();
-});
-document.getElementById('btn-moulin').addEventListener('click', () => {
-    chargerMoulin();
-    ouvrirVue3D();
-});
+// GESTION DU MODE SIMPLIFIÉ
+let isSimplifiedMode = false;
+const btnMode = document.getElementById('mode-toggle');
 
-document.getElementById('btn-tisserands').addEventListener('click', () => {
-    chargerTisserands();
-    ouvrirVue3D();
-});
+if (btnMode) {
+    btnMode.addEventListener('click', () => {
+        isSimplifiedMode = !isSimplifiedMode;
+
+        if (isSimplifiedMode) {
+            btnMode.textContent = "vers mode simplifié";
+            btnMode.style.background = "rgba(255, 255, 255, 0.8)";
+            btnMode.style.color = "#333";
+        } else {
+            btnMode.textContent = "Mode Simplifié";
+            btnMode.style.background = "rgba(255, 255, 255, 0.2)";
+            btnMode.style.color = "white";
+        }
+    });
+}
+
+// Boutons du menu principal (Triggers)
+const triggerManoir = document.getElementById('trigger-manoir');
+if (triggerManoir) {
+    triggerManoir.addEventListener('click', (e) => {
+        if (isSimplifiedMode) {
+            // Le comportement par défaut du lien (href) suffit ou on force :
+            // window.location.href = 'manoir.html';
+        } else {
+            e.preventDefault(); // Empêche le lien de changer de page
+            chargerManoir();
+            ouvrirVue3D();
+        }
+    });
+}
+
+const triggerMoulin = document.getElementById('trigger-moulin');
+if (triggerMoulin) {
+    triggerMoulin.addEventListener('click', (e) => {
+        if (isSimplifiedMode) {
+            // window.location.href = 'moulin.html';
+        } else {
+            e.preventDefault();
+            chargerMoulin();
+            ouvrirVue3D();
+        }
+    });
+}
+
+const triggerTisserands = document.getElementById('trigger-tisserands');
+if (triggerTisserands) {
+    triggerTisserands.addEventListener('click', (e) => {
+        if (isSimplifiedMode) {
+            // window.location.href = 'Tisserand.html';
+        } else {
+            e.preventDefault();
+            chargerTisserands();
+            ouvrirVue3D();
+        }
+    });
+}
 
 
 // Bouton Retour

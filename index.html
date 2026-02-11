@@ -7,58 +7,24 @@
     <meta name="description"
         content="Découvrez le Triangle de la Coconnière à travers notre webdocumentaire interactif. Explorez l'histoire et les secrets de ce lieu emblématique.">
     <meta name="keywords"
-        content="Triangle de la Coconnière, webdocumentaire, histoire, Laval, patrimoine, visite virtuelle, manoir, moulin, tisserand, ruisseau saint-nicolas, pavement">
+        content="Triangle de la Coconnière, webdocumentaire, histoire, Laval, patrimoine, visite virtuelle">
     <meta name="author" content="Votre Nom">
     <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon (1).ico">
-    <title> Triangle d'or de Laval | Découverte interactive</title>
+    <link rel="shortcut icon" type="image/x-icon" href="public/image/favicon (1).ico">
+    <title>Histoire Coconière Laval</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
 
-    <div class="stylet bons">
-        <h1 class="sympa">Le triangle d'or de la Coconnière</h1>
-        <h2 class="mini_titre">Visite interactive du patrimoine de la coconnière</h2>
-        <h2 class="mini_titre">Sélectionnez les modes classiques si vous êtes sur téléphone ou avec une faible connexion</h2>
-        <div class="parcours-container">
-            <div class="parcours">
-
-                <!-- Bouton Manoir -->
-                <div class="visite">
-                    <img src="/accueil/manoir.png" id="btn-manoir" class="clickable" alt="Manoir">
-                    <a href="./manoir.html" class="merguez dos facile">visite classique manoir</a>
-                </div>
-
-                <!-- Bouton Moulin -->
-                <div class="visite">
-                    <img src="/accueil/moulin.png" id="btn-moulin" class="clickable" alt="Moulin">
-                    <a href="./moulin.html" class="merguez dos facile">visite classique moulin</a>
-                </div>
-
-                <!-- Bouton Tisserands -->
-                <div class="visite">
-                    <img src="/accueil/tisserands.png" id="btn-tisserands" class="clickable" alt="Tisserands">
-                    <a href="Tisserand.html" class="merguez dos facile">visite classique maisons des tisserands</a>
-                </div>
-            </div>
-        </div>
 
 
 
-            <div class="association-container">
-                <a href="association.html" class="association-link">
-                    <img src="/accueil/association.png" alt="Association" class="association-img">
-                </a>
-            </div>
+    <button id="btn-back" class="merguez" style="z-index: 6000;" aria-label="Fermer la fenêtre"><img
+            src="public/Icons/croix.svg" alt=""></button>
 
-
-
-        </div>
-
-
-    <button id="btn-back" class="merguez" style="z-index: 6000;"><img src="/Icons/croix.svg"
-                                                                                     alt=""></button>
+    <!-- Bouton Toggle Mode -->
+    <button id="mode-toggle" class="mode-btn" aria-label="Changer de mode d'affichage">vers mode immersif </button>
 
     <div id="videos1" class="cache ab affichage">
         <iframe src="https://www.youtube.com/embed/--ZVkMlMiyA?si=vVE9mx2zyDdSpQZM" title="Lecteur YouTube"
@@ -85,59 +51,43 @@
 
 
     <div id="info1" class="cache stylet affichage">
-        <img src="/documents/manoir1.jpg" alt="">
+        <img src="public/documents/manoir1.jpg" alt="">
     </div>
     <div id="info2" class="cache stylet  affichage">
-        <img src="/documents/manoir2.jpg" alt="">
+        <img src="public/documents/manoir2.jpg" alt="">
     </div>
     <div id="info3" class="cache stylet  affichage">
-        <img src="/documents/manoir3.jpg" alt="">
+        <img src="public/documents/manoir3.jpg" alt="">
     </div>
 
     <div id="info4" class="cache stylet affichage">
-        <img src="/documents/moulin1.jpg" alt="">
+        <img src="public/documents/moulin1.jpg" alt="">
     </div>
     <div id="info5" class="cache stylet affichage">
-        <img src="/documents/moulin2.jpg" alt="">
+        <img src="public/documents/moulin2.jpg" alt="">
     </div>
     <div id="info6" class="cache stylet affichage">
-        <img src="/documents/moulin3.jpg" alt="">
+        <img src="public/documents/moulin3.jpg" alt="">
     </div>
 
     <div id="info7" class="cache stylet affichage">
-        <img src="/documents/tisserands1.jpg" alt="">
+        <img src="public/documents/tisserands1.jpg" alt="">
     </div>
     <div id="info8" class="cache stylet affichage">
-        <img src="/documents/tisserands2.jpg" alt="">
+        <img src="public/documents/tisserands2.jpg" alt="">
     </div>
     <div id="info9" class="cache stylet affichage">
-        <img src="/documents/tisserands3.jpg" alt="">
+        <img src="public/documents/tisserands3.jpg" alt="">
     </div>
 
     <div id="son1" class="cache son-conteneur stylet affichage3">
-        <div class="audio-player1" style="
-            text-align: center; 
-            padding: 40px 30px; 
-            background: rgba(255, 248, 240, 0.98); 
-            border-radius: 15px; 
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
-            margin: 40px auto;
-            border: 1px solid rgba(90, 74, 66, 0.1);
-        ">
-            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
-            <audio controls style="
-                width: 100%; 
-                max-width: 500px;
-                height: 60px;
-                margin: 20px 0;
-            ">
-                <source src="/sound/Pdcts_Manoir_V2.mp3" type="audio/mpeg">
+        <div class="audio-card">
+            <h3>Écouter le commentaire audio</h3>
+            <audio controls>
+                <source src="public/sound/Pdcts_Manoir_V2.mp3" type="audio/mpeg">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
-            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
-                Utilisez les contrôles pour mettre en pause ou ajuster le volume
-            </p>
+            <p>Utilisez les contrôles pour mettre en pause ou ajuster le volume</p>
         </div>
         <div class="audio-player2">
             <p>Le quartier du Pavement a cette chance exceptionnelle d'avoir conservé un précieux pan de
@@ -176,36 +126,21 @@
     </div>
 
     <div id="son2" class="cache son-conteneur stylet affichage3">
-        <div class="audio-player1" style="
-            text-align: center;
-            padding: 40px 30px;
-            background: rgba(255, 248, 240, 0.98);
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
-            margin: 40px auto;
-            border: 1px solid rgba(90, 74, 66, 0.1);
-        ">
-            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
-            <audio controls style="
-                width: 100%;
-                max-width: 500px;
-                height: 60px;
-                margin: 20px 0;
-            ">
-                <source src="/sound/Pdcts_Moulin_V2.mp3" type="audio/mpeg">
+        <div class="audio-card">
+            <h3>Écouter le commentaire audio</h3>
+            <audio controls>
+                <source src="public/sound/Pdcts_Moulin_V2.mp3" type="audio/mpeg">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
-            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
-                Utilisez les contrôles pour mettre en pause ou ajuster le volume
-            </p>
+            <p>Utilisez les contrôles pour mettre en pause ou ajuster le volume</p>
         </div>
         <div class="audio-player2">
             <p>Moulins et Meunier. Les moulins à eau sont des témoins importants de notre histoire technologique,
                 économique et sociale. Dès la Gaule romaine, l'énergie des cours d'eau est utilisée par des moulins à
                 eau. Mais c'est il y a 800 ans, au XIIIe siècle, que ces machines complexes, dites aussi usines, se sont
                 établies sur les cours d'eau du Maine, ancien nom de la Mayenne.
-                Dès lors, les seigneurs établissent leur pouvoir sur le domaine public de l'eau. Ils attribuent les places
+                Dès lors, les seigneurs établissent leur pouvoir sur le domaine public de l'eau. Ils attribuent les
+                places
                 sur les rivières et les prises d'eau pour alimenter les moulins. Les paysans, qui se nourrissent
                 principalement de céréales, ont l'obligation, appelé le banc, de faire moudre les grains ou moulins.
                 Les paysans doivent verser au seigneur une partie de grains moulus, la mouture ou farine. Ils doivent
@@ -224,11 +159,13 @@
                 de chêne ou de châtaignée, afin d'en exterre le tannin pour tanner les peaux, et rendre imputrécibles.
                 Moulin à foulon, pour assouplir les toiles. Moulin à scier du marbre, par exemple le marbre de
                 Saint-Berthevin. Moulin à forger le fer, propriété des maîtres des forges, actionnant de grands
-                soufflets pour le feu et des martinets pour marteler, former les outils de travail et les faire à cheval. En
+                soufflets pour le feu et des martinets pour marteler, former les outils de travail et les faire à
+                cheval. En
                 Mayenne, ces moulins hydrauliques étaient implantés sur les cours d'eau de Larron, l'Ernée, l'Herbe, la
                 Joanne, l'Orte, le Trelon, le Vicoyen. Dans le sud de la France, des moulins produisent de l'huile par
                 pressage des olives. Le moulin était ainsi un pilier central de l'économie locale.
-                Tout au long des siècles, le ruisseau Saint-Nicolas a fourni son énergie gratuite, de force motrice à six
+                Tout au long des siècles, le ruisseau Saint-Nicolas a fourni son énergie gratuite, de force motrice à
+                six
                 moulins. Ceux de Barbée, de la Grenouillère, aux deux moulins de la Coconnière, dont un encore en
                 place, de Saint-Nicolas et de la Tisonnière. Mais ces moulins sont désormais privés de leur roue à
                 aubes. Aux alentours de Laval, pour les journées du patrimoine, chaque troisième week-end de
@@ -240,29 +177,13 @@
     </div>
 
     <div id="son3" class="cache son-conteneur stylet affichage3">
-        <div class="audio-player1" style="
-            text-align: center;
-            padding: 40px 30px;
-            background: rgba(255, 248, 240, 0.98);
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            max-width: 600px;
-            margin: 40px auto;
-            border: 1px solid rgba(90, 74, 66, 0.1);
-        ">
-            <h3 style="color: #5a4a42; margin-bottom: 30px; font-size: 1.8rem; font-family: 'Superbusy Activity', sans-serif;">Écouter le commentaire audio</h3>
-            <audio controls style="
-                width: 100%;
-                max-width: 500px;
-                height: 60px;
-                margin: 20px 0;
-            ">
-                <source src="/sound/Pdcts_Tisserands_V2.mp3" type="audio/mpeg">
+        <div class="audio-card">
+            <h3>Écouter le commentaire audio</h3>
+            <audio controls>
+                <source src="public/sound/Pdcts_Tisserands_V2.mp3" type="audio/mpeg">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
-            <p style="color: #8b7d6b; margin-top: 20px; font-size: 0.9rem;">
-                Utilisez les contrôles pour mettre en pause ou ajuster le volume
-            </p>
+            <p>Utilisez les contrôles pour mettre en pause ou ajuster le volume</p>
         </div>
         <div class="audio-player2">
             <p>En 1435, des reçus du palais royal à la capitale prouvent l'achat des nappes et serviettes en toile de
@@ -272,17 +193,21 @@
                 encadre la fabrication de la toile du lin de Laval pour contrer les marchands espagnols qui cherchent à
                 acheter la toile de Laval sans passer par les blanchisseries lavaloises.
                 Le lin et le chanvre sont des plantes qui se cultivaient pour le tissage depuis longtemps dans l'ouest
-                de la France grâce à son climat tempéré. Avant d'être transformé en fil à tisser, les tiges de lin doivent
+                de la France grâce à son climat tempéré. Avant d'être transformé en fil à tisser, les tiges de lin
+                doivent
                 subir le rouissage pour faire macérer les bottes de lin, quelques semaines au bord d'un cours d'eau
-                calme, afin de les attendrir et permettre de séparer l'écorce de la tige centrale.Le travail est familial.
+                calme, afin de les attendrir et permettre de séparer l'écorce de la tige centrale.Le travail est
+                familial.
                 Les femmes et les enfants forment le fil à partir des paquets de filas appelés poupées, tandis que
                 souvent, c'est le père qui tisse sur le métier. Les familles tisserands ou tissiers travaillent dans des
                 conditions pénibles, dans un atelier appelé l'ouvroir.C'est sombre pour garder l'humidité, nécessaire à
                 souplesse du fil de lin.
-                L'atelier est bruyant par le pédalier qui actionne la trame pour faire passer le fil avec la navette, ce qui
+                L'atelier est bruyant par le pédalier qui actionne la trame pour faire passer le fil avec la navette, ce
+                qui
                 résonne en permanence sur le métier en bois.
                 La pièce semi-enterrée est simplement éclairée par des petites ouvertures à ras de la rue ou du
-                jardin. L'accès au séjour se fait donc par un escalier côté rue. Au grenier, sous le toit de chaume, sont
+                jardin. L'accès au séjour se fait donc par un escalier côté rue. Au grenier, sous le toit de chaume,
+                sont
                 conservés les produits du jardin. Le manuscrit de 1659 du bail de Saint-Condes dit que le locataire
                 s'engage à prendre soin du logis en bon père de famille.
                 Une fois tissées, les toiles de lin sont exposées plusieurs jours au soleil pour les blanchir, activité
@@ -300,18 +225,20 @@
                 pouvaient se retrouver à la rue. Pour parer aux émeutes de la faim, les autorités et les riches
                 bourgeois organisaient alors des distributions de pain.
                 En résumé, le tissage de lin a constitué la trâne de l'économie de Laval sur plusieurs siècles.
-                Avant la Révolution, c'est un bon tiers de la population lavalloise qui vivait de cette activité. Avant la
+                Avant la Révolution, c'est un bon tiers de la population lavalloise qui vivait de cette activité. Avant
+                la
                 Révolution, c'est un bon tiers de la population lavalloise qui vivait de la population lavalloise.</p>
         </div>
     </div>
 
 
 
-    <button id="btn-retour" class="merguez" style="z-index: 1002;"><img src="/Icons/svg/home.svg"
-            alt=""></button>
-    <button id="toggleAmbiance" class="speaker" style="display: none;">
+    <button id="btn-retour" class="merguez" style="z-index: 1002;" aria-label="Retour à l'accueil"><img
+            src="public/Icons/svg/home.svg" alt=""></button>
+    <button id="toggleAmbiance" class="speaker" style="display: none;"
+        aria-label="Activer/Désactiver le son d'ambiance">
         <!-- Mettez le chemin vers votre image de son coupé par défaut -->
-        <img id="ambianceIcon" src="/Icons/mute.png" alt="Son coupé" width="40">
+        <img id="ambianceIcon" src="public/Icons/mute.png" alt="Son coupé" width="40">
     </button>
     <canvas id="threejs-canvas"></canvas>
     <audio id="ambiance" loop preload="auto">
@@ -320,23 +247,61 @@
 
     <!-- Contenu principal -->
     <section id="accueil1">
+        <canvas id="particles-canvas"></canvas>
 
-        <img src="/accueil/fond_bois.png" class="accueil_fond" alt="Image de fond">
-        <div class="disposition">
+        <img src="public/accueil/fond_bois.png" class="accueil_fond" alt="Image de fond">
 
-            <img src="/accueil/enveloppe.png" class="accueil accueil_elt_2" alt="Enveloppe">
-            <!--<img src="/accueil/plan.png" class="accueil accueil_elt_3" alt="Plan">-->
-            <img src="/accueil/blueprint.png" class="accueil accueil_elt_1" alt="Plan technique">
-            <img src="/accueil/tasse.png" class="accueil accueil_elt_4" alt="Tasse">
-            <img src="/accueil/tissage.png" class="accueil accueil_elt_5" alt="Tissage">
-            <img src="/accueil/carnet.png" class="accueil accueil_elt_6" alt="carnet">
+        <div class="main-content-wrapper">
+            <!-- Logo -->
+            <img src="public/image/logo.svg" alt="Logo La Coconnière" class="main-logo">
+
+            <div class="disposition">
+
+                <!-- STATION 1: MANOIR (Plan) -->
+                <div class="station station-manoir">
+                    <div class="accueil interactive-element" data-tooltip="Visiter le Manoir">
+                        <img src="public/accueil/enveloppe.png" alt="Plan technique - Manoir">
+                    </div>
+                    <a id="trigger-manoir" href="manoir.html" class="station-btn">• LE MANOIR •</a>
+                </div>
+
+                <!-- STATION 2: TISSERANDS (Tissage) -->
+                <div class="station station-tisserands">
+                    <div class="accueil interactive-element" data-tooltip="Maison des Tisserands">
+                        <img src="public/accueil/tissage.png" alt="Tissage - Tisserands">
+                    </div>
+                    <a id="trigger-tisserands" href="Tisserand.html" class="station-btn">• LES MAISONS DE TISSERANDS
+                        •</a>
+                </div>
+
+                <!-- STATION 3: MOULIN (Carnet) -->
+                <div class="station station-moulin">
+                    <div class="accueil interactive-element" data-tooltip="Visiter le Moulin">
+                        <img src="public/accueil/blueprint.png" alt="Carnet - Moulin">
+                    </div>
+                    <a id="trigger-moulin" href="moulin.html" class="station-btn">• LE MOULIN •</a>
+                </div>
 
 
+                <!-- STATION 4: ASSOCIATION (Enveloppe) -->
+                <div class="station station-asso">
+                    <div class="accueil interactive-element" data-tooltip="L'Association">
+                        <img src="public/accueil/carnet.png" alt="Enveloppe - Association">
+                    </div>
+                    <a href="association.html" class="station-btn">• L'ASSOCIATION •</a>
+                </div>
+
+            </div>
+
+            <!-- Texte Explicatif -->
+            <p class="intro-text">Découverte Interactive de la Coconnière</p>
         </div>
+
     </section>
 
 
     <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/immersion.js"></script>
 </body>
 
 </html>
